@@ -157,9 +157,9 @@ class Core {
             $product_length = $this->change_dimension_unit($product_length, get_option('woocommerce_dimension_unit'), 'cm');
             //Add weight and dimensions to parcel
             $parcel->setUnitWeight($product_weight);
-            $parcel->setHeight($product_height);
-            $parcel->setWidth($product_width);
-            $parcel->setLength($product_length);
+            $parcel->setHeight(ceil($product_height));
+            $parcel->setWidth(ceil($product_width));
+            $parcel->setLength(ceil($product_length));
             $parcel_objects[] = $parcel;
             $parcels[] = $parcel->generateParcel();
         }

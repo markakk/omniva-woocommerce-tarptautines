@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Fixed
 - Fixed an error when there are no created categories in the shop
+- Maded the rounding of parcel dimensions to whole cm
 
 ## [1.1.7]
 ### Fixed
